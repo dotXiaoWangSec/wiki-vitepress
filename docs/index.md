@@ -17,7 +17,7 @@ hero:
       text: GitHub
       link: https://github.com/dotXiaoWangSec/wiki-vitepress
   image:
-    src: https://dot-1325231049.cos.ap-shanghai.myqcloud.com/img/vitepress-logo-large.webp
+    src: /public/vitepress-logo-large.webp
     alt: VitePress
 
 
