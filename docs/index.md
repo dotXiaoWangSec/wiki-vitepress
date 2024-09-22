@@ -9,10 +9,10 @@ hero:
   actions:
     - theme: brand
       text: 开始使用
-      link: /about/
+      link: https://dotxiaowangsec.github.io/wiki/#/
     - theme: alt
       text: 支持项目
-      link: /about/support
+      link: https://github.com/dotXiaoWangSec/
     - theme: alt
       text: GitHub
       link: https://github.com/dotXiaoWangSec/wiki-vitepress
