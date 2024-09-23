@@ -1,19 +1,32 @@
 import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
+import timeline from "vitepress-markdown-timeline"; 
 export default defineConfig({
+
+
 
   lang: 'zh-CN', //语言，可选 en-US
   title: "小小王互联网科技", //站点名
   // head: [
   //   ['link',{ rel: 'icon', href: '📝'}],
   // ],
+
+  markdown: { 
+    //行号显示
+    lineNumbers: true, 
+
+    //时间线
+    config: (md) => {
+      md.use(timeline);
+    },
+  },
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
 
     siteTitle: '小小王互联网科技', 
     darkModeSwitchLabel: '深浅模式',
   
-
     nav: [
       { text: '首页', link: '/' },
       {
@@ -23,21 +36,36 @@ export default defineConfig({
           { text: 'Web-Poc2', link: 'https://github.com/ibaiw/2023Hvv/' , noIcon: true  },
         ]
       },
-      { text: 'Web安全', link: '../web/basis/index.md' },
+      { text: 'Web安全', link: '/web/index.md' },
       { text: '渗透测试', link: '/redteam/index.md' },
       { text: 'CTF比赛', link: '/ctf/index.md' },
       { text: '圈子直播', link: 'https://appydwhoino2831.h5.xiaoeknow.com', noIcon: true },
 
     ],
+    
 
     sidebar: [
       {
-        text: '渗透测试',
+        text: 'Web安全',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: '基础知识', link: '/web/basis/index.md' },
+          { text: '应急响应篇', link: '/web/emer/index.md' },
+          { text: '靶场', link: '/web/range/index.md' }
+
+          
         ]
-      }
+      },
+      //这个位置后面继续更新左侧导航栏
+      {
+        text: 'Web安全',
+        items: [
+          { text: '基础知识', link: '/web/basis/index.md' },
+          { text: '应急响应篇', link: '/web/emer/index.md' },
+          { text: '靶场', link: '/web/range/index.md' }  
+        ]
+      },
+      
+
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/dotXiaoWangSec/' }, 
@@ -56,7 +84,7 @@ export default defineConfig({
       copyright: 'Copyright © 2023-2024 备案号：<a href="https://beian.miit.gov.cn/" target="_blank">鲁ICP备2024089892号-1</a>', 
     },
     editLink: { 
-      pattern: 'https://github.com/dotXiaoWangSec/', // 改成自己的仓库
+      pattern: 'https://github.com/dotXiaoWangSec/wiki-vitepress', // 改成自己的仓库
       text: '在GitHub编辑本页'
     }
 

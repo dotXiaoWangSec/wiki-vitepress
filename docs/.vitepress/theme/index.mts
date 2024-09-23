@@ -2,9 +2,21 @@
 import DefaultTheme from 'vitepress/theme';
 import giscusTalk from 'vitepress-plugin-comment-with-giscus';
 import { useData, useRoute } from 'vitepress';
+import backtotop from "./components/backtotop.vue";
+import MyLayout from './components/MyLayout.vue';
+import tags from './components/tags.vue';
+import "vitepress-markdown-timeline/dist/theme/index.css";
 
 export default {
   extends: DefaultTheme,
+  Layout: MyLayout,
+//   Layout() { 
+//     return h(DefaultTheme.Layout, null, {
+//       'doc-footer-before': () => h(backtotop), // 使用doc-footer-before插槽
+//     })
+//   },
+   
+
 
   setup() {
     // Get frontmatter and route
