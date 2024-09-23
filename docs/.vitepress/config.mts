@@ -64,7 +64,7 @@ export default defineConfig({
   },
 
   sitemap: {
-    hostname: 'https://你的网址.com',
+    hostname: 'https://xiaowang68.cn',
   }
   
 
