@@ -21,7 +21,7 @@ const { Layout } = DefaultTheme
 </template>
 
 <style>
-.title {
+/* .title {
     color: red;
-}
+} */
 </style>

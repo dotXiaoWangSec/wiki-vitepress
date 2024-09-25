@@ -10,13 +10,13 @@ hero:
   actions:
     - theme: brand
       text: 开始使用
-      link: https://dotxiaowangsec.github.io/wiki/#/
+      link: /web/index.md
     - theme: alt
       text: 开源项目
       link: https://github.com/dotXiaoWangSec/wiki-vitepress
     - theme: alt
       text: 关于我
-      link: https://github.com/dotXiaoWangSec/
+      link: /about/index.md
   image:
     src: https://dot-1325231049.cos.ap-shanghai.myqcloud.com/public/vitepress-logo-large.webp
     alt: VitePress
@@ -60,6 +60,7 @@ features:
 }
 </style>
 
+
 ---
 
 # 关于本站
@@ -86,3 +87,5 @@ https://vercel.com/
 https://wiki.ckcsec.cn/
 
 ---
+
+

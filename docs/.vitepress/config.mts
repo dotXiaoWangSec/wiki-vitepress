@@ -2,14 +2,8 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 import timeline from "vitepress-markdown-timeline"; 
 export default defineConfig({
+  cleanUrls:true,
 
-
-
-  lang: 'zh-CN', //语言，可选 en-US
-  title: "小小王互联网科技", //站点名
-  // head: [
-  //   ['link',{ rel: 'icon', href: '📝'}],
-  // ],
 
   markdown: { 
     //行号显示
@@ -24,18 +18,17 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
 
-    siteTitle: '小小王互联网科技', 
-    darkModeSwitchLabel: '深浅模式',
-  
+    siteTitle: '小小王互联网科技',   
     nav: [
       { text: '首页', link: '/' },
-      {
-        text: '开源项目',
-        items: [
-          { text: 'Web-Poc1', link: 'https://dotxiaowangsec.github.io/wiki/#/' , noIcon: true  },
-          { text: 'Web-Poc2', link: 'https://github.com/ibaiw/2023Hvv/' , noIcon: true  },
-        ]
-      },
+      { text: '开源项目', link: 'https://dotxiaowangsec.github.io/wiki/#/', noIcon: true },
+      // {
+      //   text: '开源项目',
+      //   items: [
+      //     { text: 'Web-Poc1', link: 'https://dotxiaowangsec.github.io/wiki/#/' , noIcon: true  },
+      //     { text: 'Web-Poc2', link: 'https://github.com/ibaiw/2023Hvv/' , noIcon: true  },
+      //   ]
+      // },
       { text: 'Web安全', link: '/web/index.md' },
       { text: '渗透测试', link: '/redteam/index.md' },
       { text: 'CTF比赛', link: '/ctf/index.md' },
@@ -46,24 +39,42 @@ export default defineConfig({
 
     sidebar: [
       {
+        text: '开源项目',
+        items: [
+          { text: 'POC验证', link: '/op/index.md' },
+          { text: '信息搜集', link: '/op/inf/index.md' }
+        ]
+      },
+      {
         text: 'Web安全',
         items: [
-          { text: '基础知识', link: '/web/basis/index.md' },
-          { text: '应急响应篇', link: '/web/emer/index.md' },
-          { text: '靶场', link: '/web/range/index.md' }
-
-          
+          { text: '基础知识', link: '/web/index.md' },
+          { text: '应急响应', link: '/web/index.md' },
+          { text: '靶场环境', link: '/web/range/index.md' }
         ]
       },
       //这个位置后面继续更新左侧导航栏
       {
-        text: 'Web安全',
+        text: '渗透测试',
         items: [
-          { text: '基础知识', link: '/web/basis/index.md' },
-          { text: '应急响应篇', link: '/web/emer/index.md' },
-          { text: '靶场', link: '/web/range/index.md' }  
+          { text: '基础知识', link: '/redteam/index.md' },
+          { text: '信息收集', link: '/redteam/information/index.md' },
+          { text: '靶场搭建', link: '/redteam/index.md' },
+          { text: '问题解决', link: '/redteam/index.md' },
+          { text: '流量隐藏', link: '/redteam/Traffichiding/index.md' },
         ]
       },
+      {
+        text: 'CTF比赛',
+        items: [
+          { text: 'Web', link: '/ctf/Web/index.md' },
+          { text: 'Reverse', link: '/ctf/Reverse/index.md' },
+          { text: 'Pwn', link: '/ctf/Pwn/index.md' },
+          { text: 'Crypto', link: '/ctf/Crypto/index.md' },
+          { text: 'Misc', link: '/ctf/Misc/index.md' },
+        ]
+      },
+      {text: '圈子直播', link: '/live/index.md' },
       
 
     ],
@@ -94,5 +105,4 @@ export default defineConfig({
     hostname: 'https://xiaowang68.cn',
   }
   
-
 })
