@@ -32,7 +32,6 @@ export default defineConfig({
       { text: 'Web安全', link: '/web/index.md' },
       { text: '渗透测试', link: '/redteam/index.md' },
       { text: 'CTF比赛', link: '/ctf/index.md' },
-      { text: '圈子直播', link: 'https://appydwhoino2831.h5.xiaoeknow.com/p/decorate/page/eyJpZCI6IjU0MTQ1NTEifQ', noIcon: true },
 
     ],
     
@@ -74,9 +73,6 @@ export default defineConfig({
           { text: 'Misc', link: '/ctf/Misc/index.md' },
         ]
       },
-      {text: '圈子直播', link: '/live/index.md' },
-      
-
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/dotXiaoWangSec/' }, 
