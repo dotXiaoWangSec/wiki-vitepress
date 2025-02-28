@@ -74,17 +74,6 @@ dotXiaowangSec安全研究是一个面对网络安全从业者的知识库，涉
 ## 支持项目
 如果你恰巧馒头雄厚，感觉文库内容对你有所帮助的话，可以考虑打赏一下本项目，就好像偶尔给忙碌更新的我买杯咖啡☕️～
 
-## 鸣谢
-感谢以下项目作为本文库的核心技术支撑
-
-https://vitepress.dev/
-
-https://github.com/vuejs/vitepress
-
-https://vercel.com/
-
-https://wiki.ckcsec.cn/
-
 ---
 
 
