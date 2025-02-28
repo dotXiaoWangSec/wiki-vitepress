@@ -6,7 +6,6 @@ title: 小小王互联网科技
 
 hero:
   name: "小小王互联网科技"
-  tagline: 没有做不到，只有想不到。Nothing is impossible, only unexpected
   actions:
     - theme: brand
       text: 开始使用
